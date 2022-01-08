@@ -9,11 +9,10 @@ const getMoviesOscars = (firstCharacter) => {
     .then((response) => response.data)
     .then((html) => {
       const $ = cheerio.load(html);
-      const movies = $("td > i> b > a");
-      const parsedMovies = [];
-      for (let movie of movies) {
-        parsedMovies.push(movie.attribs.title);
-      }
+      var parsedMovies = [];
+      $('b').find('a').each(function (index, element) {
+        parsedMovies.push($(element).text());
+      });
       console.log(parsedMovies);
       return firstCharacter
         ? parsedMovies.filter(
@@ -25,7 +24,6 @@ const getMoviesOscars = (firstCharacter) => {
     })
     .catch(console.error);
 };
-
 const getMoviesIMDB = (firstCharacter) => {
   return axios
     .get(
@@ -56,18 +54,17 @@ const getMoviesIMDB = (firstCharacter) => {
 const getMoviesRT = (firstCharacter) => {
   return axios
     .get(
-      "https://www.rottentomatoes.com/top/bestofrt/"
+      "https://www.rottentomatoes.com/top/bestofrt/?year=2021"
     )
     .then((response) => response.data)
     .then((html) => {
       const $ = cheerio.load(html);
       const movies = $("td > a");
-      
+
       var parsedMovies = [];
       $('td').find('a').each(function (index, element) {
         parsedMovies.push($(element).text());
       });
-      
 
       console.log(parsedMovies);
       return firstCharacter
@@ -79,6 +76,6 @@ const getMoviesRT = (firstCharacter) => {
         : parsedMovies;
     })
     .catch(console.error);
-};
+  }; 
 
-module.exports = { getMoviesIMDB, getMoviesOscars,getMoviesRT };
+module.exports = { getMoviesOscars ,getMoviesIMDB, getMoviesRT };
