@@ -10,11 +10,10 @@ const getMoviesOscars = (firstCharacter) => {
     .then((html) => {
       const $ = cheerio.load(html);
       const movies = $("td > i> b > a");
-      const parsedMovies = [];
-      for (let movie of movies) {
-        parsedMovies.push(movie.attribs.title);
-      }
-      console.log(parsedMovies);
+      var parsedMovies = [];
+      $('b').find('a').each(function (index, element) {
+        parsedMovies.push($(element).text());
+      });
       return firstCharacter
         ? parsedMovies.filter(
             (movie) =>
