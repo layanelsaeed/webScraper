@@ -54,7 +54,7 @@ const getMoviesIMDB = (firstCharacter) => {
 const getMoviesRT = (firstCharacter) => {
   return axios
     .get(
-      "https://www.rottentomatoes.com/top/bestofrt/?year=2021"
+      "https://www.rottentomatoes.com/top/bestofrt/"
     )
     .then((response) => response.data)
     .then((html) => {
