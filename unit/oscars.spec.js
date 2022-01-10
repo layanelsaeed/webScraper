@@ -8,7 +8,7 @@ beforeEach(() => {
   jest.resetAllMocks();
 });
 
-describe('Test get MoviesOscars  API', () => {
+describe('Test get MoviesOscars API', () => {
   jest.setTimeout(20000)
   test('Test Movies that won the Oscars', async () => {
     const results = await getMoviesOscars('T');

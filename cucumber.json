@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9684931
+              "duration": 12008364
             }
           },
           {
@@ -32,20 +32,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2943642204
+              "duration": 3719644307
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I receive [ \"Schindler's List\", \"Star Wars: Episode V - The Empire Strikes Back\", \"Spider-Man: No Way Home\", \"Shichinin no samurai\", \"Se7en\", \"Saving Private Ryan\", \"Star Wars\", \"Sen to Chihiro no kamikakushi\", \"Seppuku\", \"Sunset Blvd.\", \"Spider-Man: Into the Spider-Verse\", \"Star Wars: Episode VI - Return of the Jedi\", \"Singin' in the Rain\", \"Scarface\", \"Snatch\", \"Some Like It Hot\", \"Shutter Island\", \"Smultronstället\", \"Salinui chueok\", \"Stalker\", \"Sherlock Jr.\", \"Stand by Me\", \"Spotlight\", \"Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni\", \"Soorarai Pottru\" ]",
+            "name": "I receive [ \"Schindler's List\", \"Star Wars: Episode V - The Empire Strikes Back\", \"Spider-Man: No Way Home\", \"Shichinin no samurai\", \"Se7en\", \"Saving Private Ryan\", \"Star Wars\", \"Sen to Chihiro no kamikakushi\", \"Seppuku\", \"Sunset Blvd.\", \"Spider-Man: Into the Spider-Verse\", \"Star Wars: Episode VI - Return of the Jedi\", \"Singin' in the Rain\", \"Scarface\", \"Snatch\", \"Some Like It Hot\", \"Shutter Island\", \"Smultronstället\", \"Salinui chueok\", \"Stalker\", \"Sherlock Jr.\", \"Stand by Me\", \"Spotlight\", \"Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni\" ]",
             "match": {
               "location": "e2e/steps/steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 3673173
+              "duration": 3100906
             }
           }
         ],
@@ -90,7 +90,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11805368
+              "duration": 12026602
             }
           },
           {
@@ -103,7 +103,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2364495184
+              "duration": 3312738512
             }
           },
           {
@@ -116,7 +116,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2553184
+              "duration": 2616278
             }
           }
         ],
@@ -161,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13793544
+              "duration": 10179547
             }
           },
           {
@@ -174,20 +174,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1127308786
+              "duration": 2440227180
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I receive [ \"Arcane\", \"Avengers: Endgame\"]",
+            "name": "I receive [\"Avengers: Endgame\"]",
             "match": {
               "location": "e2e/steps/steps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 1928313
+              "duration": 2456964
             }
           }
         ],

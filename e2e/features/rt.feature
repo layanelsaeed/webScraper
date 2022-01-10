@@ -9,4 +9,4 @@ Feature: Getting Top 100 Movies
 
     Examples:
       | character | response                                                         |
-      | a         | [ "Arcane", "Avengers: Endgame"]                                 |
+      | a         | ["Avengers: Endgame"]                                            |
