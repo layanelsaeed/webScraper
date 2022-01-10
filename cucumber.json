@@ -1,0 +1,215 @@
+[
+  {
+    "description": "  I want to make sure /imdb operation through REST API works fine",
+    "elements": [
+      {
+        "description": "",
+        "id": "getting-top-250-movies;get-movies-by-firstcharacter",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "get movies by firstCharacter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A firstCharacter s exist",
+            "match": {
+              "location": "e2e/steps/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9684931
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I send GET request to /imdb",
+            "match": {
+              "location": "e2e/steps/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2943642204
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I receive [ \"Schindler's List\", \"Star Wars: Episode V - The Empire Strikes Back\", \"Spider-Man: No Way Home\", \"Shichinin no samurai\", \"Se7en\", \"Saving Private Ryan\", \"Star Wars\", \"Sen to Chihiro no kamikakushi\", \"Seppuku\", \"Sunset Blvd.\", \"Spider-Man: Into the Spider-Verse\", \"Star Wars: Episode VI - Return of the Jedi\", \"Singin' in the Rain\", \"Scarface\", \"Snatch\", \"Some Like It Hot\", \"Shutter Island\", \"Smultronstället\", \"Salinui chueok\", \"Stalker\", \"Sherlock Jr.\", \"Stand by Me\", \"Spotlight\", \"Shin seiki Evangelion Gekijô-ban: Air/Magokoro wo, kimi ni\", \"Soorarai Pottru\" ]",
+            "match": {
+              "location": "e2e/steps/steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3673173
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ImdbScrap",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "getting-top-250-movies",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Getting Top 250 Movies",
+    "tags": [
+      {
+        "name": "@ImdbScrap",
+        "line": 1
+      }
+    ],
+    "uri": "e2e/features/imdb.feature"
+  },
+  {
+    "description": "  I want to make sure /oscars operation through REST API works fine",
+    "elements": [
+      {
+        "description": "",
+        "id": "getting-movies-that-won-the-oscars;get-movies-that-won-the-oscars-by-firstcharacter",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "get movies that won the Oscars by firstCharacter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A firstCharacter t exist",
+            "match": {
+              "location": "e2e/steps/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11805368
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I send GET request to /oscars",
+            "match": {
+              "location": "e2e/steps/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2364495184
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I receive [\"The Shape of Water\", \"The Artist\", \"The King's Speech\", \"The Hurt Locker\", \"The Departed\", \"The Lord of the Rings: The Return of the King\", \"Titanic\", \"The English Patient\", \"The Silence of the Lambs\", \"The Last Emperor\", \"Terms of Endearment\", \"The Deer Hunter\", \"The Godfather Part II\", \"The Sting\", \"The Godfather\", \"The French Connection\", \"The Sound of Music\", \"The Apartment\", \"The Best Years of Our Lives\", \"The Bridge on the River Kwai\", \"The Broadway Melody\", \"The Great Ziegfeld\", \"The Greatest Show on Earth\", \"The Life of Emile Zola\", \"The Lost Weekend\", \"Tom Jones\" ]",
+            "match": {
+              "location": "e2e/steps/steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2553184
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WikipediaScrap",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "getting-movies-that-won-the-oscars",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Getting movies that won the Oscars",
+    "tags": [
+      {
+        "name": "@WikipediaScrap",
+        "line": 1
+      }
+    ],
+    "uri": "e2e/features/oscars.feature"
+  },
+  {
+    "description": "  I want to make sure /rottenTomatoes operation through REST API works fine",
+    "elements": [
+      {
+        "description": "",
+        "id": "getting-top-100-movies;get-movies-by-firstcharacter",
+        "keyword": "Scenario Outline",
+        "line": 5,
+        "name": "get movies by firstCharacter",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A firstCharacter a exist",
+            "match": {
+              "location": "e2e/steps/steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13793544
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I send GET request to /rottenTomatoes",
+            "match": {
+              "location": "e2e/steps/steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1127308786
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I receive [ \"Arcane\", \"Avengers: Endgame\"]",
+            "match": {
+              "location": "e2e/steps/steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1928313
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RottenTomatoesScrap",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "getting-top-100-movies",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Getting Top 100 Movies",
+    "tags": [
+      {
+        "name": "@RottenTomatoesScrap",
+        "line": 1
+      }
+    ],
+    "uri": "e2e/features/rt.feature"
+  }
+]

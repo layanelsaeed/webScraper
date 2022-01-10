@@ -1,7 +1,7 @@
 //jest.mock("axios"); 
 const axios = require('axios');
 const {getMoviesRT } = require('../scrap.js');
-const mockMoviesRtApiStub = require('./moviesRt.api.stub.json');
+const mockMoviesRtApiStub = require('./rt.api.stub.json');
 
 beforeEach(() => {
   jest.clearAllMocks();
